@@ -127,10 +127,34 @@ table {
   border-spacing: 0;
 }
 /* Set every element's box-sizing to border-box */
+.font-titles {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+}
 * {
   box-sizing: border-box;
 }
 html,
 body {
   height: 100%;
+  background: black;
+  color: white;
+}
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1pt dashed red;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 2pt solid purple;
+}
+nav ul li {
+  margin: 2%;
+}
+nav ul li a {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
 }

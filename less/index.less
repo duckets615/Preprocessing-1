@@ -49,11 +49,44 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
+//-------- MIX INS --------//
+
+.font-titles {
+	font-family: 'Orbitron', sans-serif;
+	font-size: 1rem;
+}
+
+
+
+//-------- CSS --------//
 * {
     box-sizing: border-box;
 }
 
 html, body {
+	// font-size: 62.5%;
     height: 100%;
+	background: black;
+	color: white;
 }
 
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1pt dashed red;
+}
+
+nav {
+	ul {
+		display: flex;
+		justify-content: flex-end;
+		border-bottom: 2pt solid purple;
+		li {
+			margin: 2%;
+			a {
+				.font-titles();
+				text-decoration: none;
+			}
+		}
+	}
+}
